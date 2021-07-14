@@ -121,6 +121,12 @@ nav{
     height: 438px;
     left: 743px;
     top: -370px;
+    transition: ease-in-out 1s;
+}
+.header-banner img:hover{
+    
+    transform: scale(125%);
+
 }
 
 
@@ -170,6 +176,10 @@ main{
 .box:hover{
     background-color: black;
     
+}
+.box:hover>img{
+    transform: scale(120%);
+    margin-bottom: 20px;
 }
 .box:hover>.player-detail>p {
     color: white;
@@ -227,11 +237,49 @@ main{
 }
 
 .highlight-banner>img{
-    
+   
     width: 567px;
     height: 427px;
     
 }
+.img1{
+    position: absolute;
+    z-index: 1;
+    animation-name: img1;
+    animation-duration: 8git s;
+    animation-iteration-count: infinite;
+    transition: 2s ease-in-out;
+}
+.img2{
+    
+    position: absolute;
+    animation-name: img2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: 2s ease-in-out;
+
+}
+.img3{
+    position: absolute;
+}
+
+@keyframes img1 {
+    0%   {z-index: 1;}
+    25% { z-index: 0;}
+    50%{z-index: 0;}
+    75%{z-index: 0;}
+    100% {z-index: 1;}
+  }
+@keyframes img2 {
+
+    0%   {z-index: 0;}
+    25% { z-index: 0;}
+    50%{z-index: 1;}
+    75%{z-index: 0;}
+    100% {z-index: 0;}
+
+    
+} 
 
 .highlight-detail button{
     background-color: #E02C6D;
@@ -627,6 +675,7 @@ main{
     width: 329px;
     height: 299px;
     margin-left: 80px;
+   
 }
 
 .highlight-detail>h2{
@@ -645,11 +694,31 @@ main{
 
 .highlight-banner>img{
 
-    position: static;
+  
     width: 328px;
     height: 248px;
     
+    
 }
+.img1{
+    position: absolute;
+    z-index: 1;
+    animation-name: img1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 2s ease-in-out;
+}
+.img2{
+    
+    position: absolute;
+
+}
+
+@keyframes img1 {
+    0%   {z-index: 1;}
+    
+    100% {z-index: 0;}
+  }
 
 .highlight-detail button{
     background-color: #E02C6D;
@@ -677,7 +746,7 @@ main{
 .membership{
     display: flex;
     flex-direction:column;
-    margin-top: 35px;
+    margin-top: 275px;
 }
 
 .contact{
