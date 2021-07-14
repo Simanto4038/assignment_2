@@ -704,21 +704,41 @@ main{
     position: absolute;
     z-index: 1;
     animation-name: img1;
-    animation-duration: 4s;
+    animation-duration: 8git s;
     animation-iteration-count: infinite;
     transition: 2s ease-in-out;
 }
 .img2{
     
     position: absolute;
+    animation-name: img2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: 2s ease-in-out;
 
+}
+.img3{
+    position: absolute;
 }
 
 @keyframes img1 {
     0%   {z-index: 1;}
-    
-    100% {z-index: 0;}
+    25% { z-index: 0;}
+    50%{z-index: 0;}
+    75%{z-index: 0;}
+    100% {z-index: 1;}
   }
+@keyframes img2 {
+
+    0%   {z-index: 0;}
+    25% { z-index: 0;}
+    50%{z-index: 1;}
+    75%{z-index: 0;}
+    100% {z-index: 0;}
+
+    
+} 
+
 
 .highlight-detail button{
     background-color: #E02C6D;
