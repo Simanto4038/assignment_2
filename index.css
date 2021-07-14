@@ -577,6 +577,11 @@ height: 110px;
        
     }
     
+    .header-banner img:hover{
+    
+        transform: scale(109%);
+    
+    }
     
     /* ========header end=========== */
     
@@ -1036,6 +1041,11 @@ footer{
             margin-left:55% ;
             margin-top:110px;
            
+        }
+        .header-banner img:hover{
+    
+            transform: scale(106%);
+        
         }
         
         
