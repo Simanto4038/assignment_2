@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;;
+    
 }
 
 /* ==============header start========== */
@@ -264,8 +265,9 @@ main{
 .contact{
     flex: 1;
     color: white;
-    background-color: rgb(121, 118, 118);
+    background-color:rgba(189, 19, 53, 0.808);
     text-align: center;
+    display: flex;
 }
 .contact form{
     color: white;
@@ -274,11 +276,11 @@ main{
     justify-content: center;
     margin-left: 25px;
     
-    width: 60%;
-    background-color: rgb(121, 118, 118);
+    width: 80%;
+ 
     
 }
-.contact form>input, textarea{
+.contact form input, textarea{
     border: solid white;
     color: white;
     background-color: rgb(121, 118, 118);
@@ -328,7 +330,28 @@ color: white;
         border: none;
         
     }
-    
+.log-in{
+    display: flex;
+    flex-direction: column;
+}
+.log-in input{
+    border: solid white;
+    color: white;
+    background-color: rgb(121, 118, 118);
+}
+ .log-in>button{
+     margin-top: 30px;
+     margin-left: -1px;
+ }
+.payment{
+    display: flex;
+}
+.payment>h1{
+    font-size: 64px;
+    color:rgb(40, 230, 204);
+    padding: 5px;
+
+}
 
 /* ============main end=========== */
 
@@ -530,6 +553,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
    
 }
 
@@ -661,19 +685,21 @@ main{
 }
 
 .contact{
-    flex: 1;
+    font-size: 10px;
     color: white;
     background-color: rgb(121, 118, 118);
     text-align: center;
+    display: flex;
+    
 }
 .contact form{
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 15px;
     
-    width: 80%;
+    width: 50%;
     background-color: rgb(121, 118, 118);
     
 }
@@ -688,7 +714,7 @@ main{
     font-weight: 700;
     height: 30px;
     width: 50%;
-    margin-left: -2px;
+    margin-left: 1px;
     border: solid white;
     margin-bottom: 30px;
 }
@@ -717,8 +743,40 @@ color: white;
     }
 
   
+    .payment{
+        
+        display: flex;
+        margin-left: -12px;
+    }
+    .payment>h1{
+        font-size: 24px;
+        color:rgb(40, 230, 204);
+        margin-top: 12px;
+        padding: 5px;
+        
+    
+    }
+    .log-in{
+       margin-left: -95px;
 
+    }
+    .log-in label{
+        text-align: left;
 
+    }
+    .log-in h3{
+       
+        margin-left: -20px;
+    }
+   .log-in>button{
+       font-size: 10px;
+       margin-left: 3px;
+       margin-bottom: 40px;
+   }
+    .log-in input{
+        width: 80%;
+
+    }
 /* ============main end=========== */
 
 
